@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  myTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>myTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 18 15:08:19 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>321 seconds (321925 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC_003_DataDriven_Test.test_Login()'><b>test_Login</b><br>Test class: testCases.TC_003_DataDriven_Test<br>Parameters: laksh@yahoo.com, Lakshmi, Invalid</td>
+<td></td>
+<td>24</td>
+<td>testCases.TC_003_DataDriven_Test@402c4085</td></tr>
+<tr>
+<td title='testCases.TC_006_ForgotPassword.test_forgotPassword()'><b>test_forgotPassword</b><br>Test class: testCases.TC_006_ForgotPassword</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_006_ForgotPassword@2767e23c</td></tr>
+<tr>
+<td title='testCases.TC_002_LoginTest.test_Login()'><b>test_Login</b><br>Test class: testCases.TC_002_LoginTest</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_002_LoginTest@57a78e3</td></tr>
+<tr>
+<td title='testCases.TC_015_MyAccount.test_MyAccount()'><b>test_MyAccount</b><br>Test class: testCases.TC_015_MyAccount</td>
+<td></td>
+<td>6</td>
+<td>testCases.TC_015_MyAccount@268f106e</td></tr>
+<tr>
+<td title='testCases.TC_012_ShoppingCart.test_ShoppingCart()'><b>test_ShoppingCart</b><br>Test class: testCases.TC_012_ShoppingCart</td>
+<td></td>
+<td>12</td>
+<td>testCases.TC_012_ShoppingCart@7ce69770</td></tr>
+<tr>
+<td title='testCases.TC_005_Currency.test_Currency()'><b>test_Currency</b><br>Test class: testCases.TC_005_Currency</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_005_Currency@6fa51cd4</td></tr>
+<tr>
+<td title='testCases.TC_003_DataDriven_Test.test_Login()'><b>test_Login</b><br>Test class: testCases.TC_003_DataDriven_Test<br>Parameters: laks@yahoo.com, xyz, Invalid</td>
+<td></td>
+<td>21</td>
+<td>testCases.TC_003_DataDriven_Test@402c4085</td></tr>
+<tr>
+<td title='testCases.TC_003_DataDriven_Test.test_Login()'><b>test_Login</b><br>Test class: testCases.TC_003_DataDriven_Test<br>Parameters: lakshmi@yahoo.com, Laxmi, Invalid</td>
+<td></td>
+<td>21</td>
+<td>testCases.TC_003_DataDriven_Test@402c4085</td></tr>
+<tr>
+<td title='testCases.TC_003_DataDriven_Test.test_Login()'><b>test_Login</b><br>Test class: testCases.TC_003_DataDriven_Test<br>Parameters: pavanoltraining@gmail.com, test@123, Valid</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_003_DataDriven_Test@402c4085</td></tr>
+<tr>
+<td title='testCases.TC_011_WishList.test_WishListTest()'><b>test_WishListTest</b><br>Test class: testCases.TC_011_WishList</td>
+<td></td>
+<td>21</td>
+<td>testCases.TC_011_WishList@7ce026d3</td></tr>
+<tr>
+<td title='testCases.TC_013_HomePage.test_HomePage()'><b>test_HomePage</b><br>Test class: testCases.TC_013_HomePage</td>
+<td></td>
+<td>12</td>
+<td>testCases.TC_013_HomePage@1750fbeb</td></tr>
+<tr>
+<td title='testCases.TC_010_AddtoCart.test_AddtoCartTest()'><b>test_AddtoCartTest</b><br>Test class: testCases.TC_010_AddtoCart</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC_010_AddtoCart@1caa0244</td></tr>
+<tr>
+<td title='testCases.TC_004_Logout.test_Logout()'><b>test_Logout</b><br>Test class: testCases.TC_004_Logout</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC_004_Logout@6e9a5ed8</td></tr>
+<tr>
+<td title='testCases.TC_014_CheckOut.test_CheckOut()'><b>test_CheckOut</b><br>Test class: testCases.TC_014_CheckOut</td>
+<td></td>
+<td>9</td>
+<td>testCases.TC_014_CheckOut@5b247367</td></tr>
+<tr>
+<td title='testCases.TC_003_DataDriven_Test.test_Login()'><b>test_Login</b><br>Test class: testCases.TC_003_DataDriven_Test<br>Parameters: abc123@gmail.com, test@123, Valid</td>
+<td></td>
+<td>1</td>
+<td>testCases.TC_003_DataDriven_Test@402c4085</td></tr>
+<tr>
+<td title='testCases.TC_007_Serch.test_Serch()'><b>test_Serch</b><br>Test class: testCases.TC_007_Serch</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_007_Serch@710c2b53</td></tr>
+<tr>
+<td title='testCases.TC_001_AccountRegistrationTest.test_accountRegistration()'><b>test_accountRegistration</b><br>Test class: testCases.TC_001_AccountRegistrationTest</td>
+<td></td>
+<td>2</td>
+<td>testCases.TC_001_AccountRegistrationTest@16eb3ea3</td></tr>
+<tr>
+<td title='testCases.TC_009_ProductDisplayPageTest.test_ProductDisplayPageTest()'><b>test_ProductDisplayPageTest</b><br>Test class: testCases.TC_009_ProductDisplayPageTest</td>
+<td></td>
+<td>47</td>
+<td>testCases.TC_009_ProductDisplayPageTest@cecf639</td></tr>
+<tr>
+<td title='testCases.TC_008_ProductComparission.test_ProductComparission()'><b>test_ProductComparission</b><br>Test class: testCases.TC_008_ProductComparission</td>
+<td></td>
+<td>5</td>
+<td>testCases.TC_008_ProductComparission@14028087</td></tr>
+</table><p>
+</body>
+</html>

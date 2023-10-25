@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="mySuite">
+	
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"/> 
+		
+	</listeners>
+ 
+  <test name="myTest">
+    <parameter name="browser" value="chrome" />    
+    <classes>
+   	    <class name="testCases.TC_001_AccountRegistrationTest"/> 
+   	    <class name="testCases.TC_002_LoginTest"/>
+   	    <class name="testCases.TC_003_DataDriven_Test"/>  
+   	    <class name="testCases.TC_005_Currency"/> 
+   	    <class name="testCases.TC_006_ForgotPassword"/>  
+   	    <class name="testCases.TC_007_Serch"/> 
+   	    <class name="testCases.TC_008_ProductComparission"/> 
+   	    <class name="testCases.TC_009_ProductDisplayPageTest"/> 
+   	    <class name="testCases.TC_010_AddtoCart"/> 
+   	    <class name="testCases.TC_011_WishList"/>
+   	    <class name="testCases.TC_012_ShoppingCart"/> 
+   	    <class name="testCases.TC_013_HomePage"/> 
+   	    <class name="testCases.TC_014_CheckOut"/> 
+   	    <class name="testCases.TC_015_MyAccount"/> 
+   	    <class name="testCases.TC_016_MyAccountInformation"/>  
+   	    <class name="testCases.TC_004_Logout"/>  
+    </classes>
+  </test> 
+  
+</suite> 
